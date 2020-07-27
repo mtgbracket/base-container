@@ -23,3 +23,5 @@ RUN pecl install -o -f redis-5.0.2 \
 
 RUN a2enmod rewrite
 RUN a2enmod headers
+
+RUN echo "error_reporting=E_ALL & ~E_DEPRECATED & ~E_NOTICE" > /usr/local/etc/php/conf.d/mtgbracket.ini
