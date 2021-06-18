@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     git \
     g++ \
-    zlib1g-dev
+    zlib1g-dev \
+    nano
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs

@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y \
     libxslt-dev \
     libsodium-dev \
     libzip-dev \
-    git
+    git \
+    nano
 
 RUN docker-php-ext-install xsl
 RUN docker-php-ext-install sodium
